@@ -1,0 +1,19 @@
+{
+  "name": "api-management",
+  "version": "1.0.0",
+  "description": "> a api management tool like [Postman](www.getpostman.com).",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/P-ppc/api-management.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/P-ppc/api-management/issues"
+  },
+  "homepage": "https://github.com/P-ppc/api-management#readme"
+}
