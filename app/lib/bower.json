@@ -1,0 +1,17 @@
+{
+  "name": "lib",
+  "homepage": "https://github.com/P-ppc/api-management",
+  "authors": [
+    "P-ppc <ppc-user@foxmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

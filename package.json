@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/P-ppc/api-management/issues"
   },
-  "homepage": "https://github.com/P-ppc/api-management#readme"
+  "homepage": "https://github.com/P-ppc/api-management#readme",
+  "dependencies": {
+    "ejs": "^2.5.2",
+    "express": "^4.14.0"
+  }
 }
