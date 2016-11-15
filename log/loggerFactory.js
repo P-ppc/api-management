@@ -106,7 +106,7 @@ let getLogger = function () {
             logger = logConsole;
             break;
         case "production":
-            logger = logInfo;
+            logger = fileLog;
             break;
         default:
             logger = logConsole;
