@@ -3,21 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="/static/bower/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="/static/css/common.css">
     <!-- angularjs放在前面, 防止页面闪烁 -->
     <script type="text/javascript" src="/static/bower/angular/angular.min.js"></script>
     <script type="text/javascript" src="/static/bower/angular-route/angular-route.min.js"></script>
 </head>
 <body>
-hello world!
-<div ng-view></div>
-<div ng-controller="navController">
-    <div ng-include="navPath"></div>
-</div>
-<div class="nav" ng-controller="navController">{{content}}</div>
 <script type="text/javascript" src="/static/js/app.js"></script>
 <script type="text/javascript" src="/static/js/config/route.js"></script>
-<script type="text/javascript" src="/static/js/controllers/homeController.js"></script>
-<script type="text/javascript" src="/static/js/controllers/navController.js"></script>
 </body>
 </html>

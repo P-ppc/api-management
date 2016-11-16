@@ -16,6 +16,7 @@
   ],
   "dependencies": {
     "angular": "angularjs#1",
-    "angular-route": "1"
+    "angular-route": "1",
+    "bootstrap": "^3.3.7"
   }
 }
