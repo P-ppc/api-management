@@ -3,8 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
+    <!-- angularjs放在前面, 防止页面闪烁 -->
+    <script type="text/javascript" src="/static/bower/angular/angular.min.js"></script>
+    <script type="text/javascript" src="/static/bower/angular-route/angular-route.min.js"></script>
 </head>
-<body>
-    Hello World!
+<body ng-app="App">
+hello world!
+<script type="text/javascript" src="/static/js/app.js"></script>
 </body>
 </html>

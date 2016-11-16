@@ -11,6 +11,7 @@ app.use('/static/css', express.static(__dirname + '/app/css'));
 app.use('/static/img', express.static(__dirname + '/app/img'));
 app.use('/static/js', express.static(__dirname + '/app/js'));
 app.use('/static/lib', express.static(__dirname + '/app/lib'));
+app.use('/static/bower', express.static(__dirname + '/app/lib/bower_components'));
 app.use('/static/components', express.static(__dirname + '/app/views/components'));
 app.use('/static/tpl', express.static(__dirname + '/app/views/tpl'));
 
