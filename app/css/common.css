@@ -1,3 +1,57 @@
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
 body {
     font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
+    position: relative;
+}
+
+.m-header {
+    height: 50px;
+    background: #58B7FF;
+    margin-bottom: 0;
+}
+
+.m-container-outer {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 50px 0 0 0;
+
+    background: #13CE66;
+}
+
+.m-container-inner {
+    height: 100%;
+    padding: 0;
+    background: #F7BA2A;
+    
+    position: relative;
+}
+
+.m-sidebar {
+    height: 100%;
+    width: 300px;
+    overflow: auto;
+    position: relative;
+    z-index: 1000;
+    box-shadow: 3px 0 3px #ccc;
+    
+    background: #f3f3f3;
+}
+
+.m-content {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-left: 300px;
+
+    background: #D3DCE6;
 }
