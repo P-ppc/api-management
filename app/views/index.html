@@ -13,8 +13,13 @@
 <header class="navbar navbar-static-top m-header"></header>
 <div class="container-fluid m-container-outer">
     <div class="container m-container-inner">
-        <div class="m-sidebar">
-            
+        <!-- controller采用ng-inclue实现tab切换 -->
+        <div class="m-sidebar" ng-controller="sidebarController">
+            <ul class="m-tab clearfix">
+                <li class="m-tab-item {{sidebar.class.history}}" ng-click="switchTab(sidebar.tab.history)">历史记录</li>
+                <li class="m-tab-item {{sidebar.class.project}}" ng-click="switchTab(sidebar.tab.project)">项目</li>
+            </ul>
+            <div ng-include="sidebar.url" class="m-sidebar-content"></div>
         </div>
         <!-- TODO: ng-view -->
         <div class="m-content"></div>
@@ -22,5 +27,6 @@
 </div>
 <script type="text/javascript" src="/static/js/app.js"></script>
 <script type="text/javascript" src="/static/js/config/route.js"></script>
+<script type="text/javascript" src="/static/js/controllers/sidebarController.js"></script>
 </body>
 </html>
