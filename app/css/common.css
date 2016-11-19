@@ -23,62 +23,51 @@ li {
 
 .clearfix:after {
     display: block;
+    clear: both;
     content: "";
     height: 0;
     width: 0;
 }
 
+.flexbox {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
 .m-header {
-    height: 50px;
+    flex: 0 0 50px;
     background: #58B7FF;
     margin-bottom: 0;
 }
 
-.m-container-outer {
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    padding: 50px 0 0 0;
-
-    background: #13CE66;
-}
-
-.m-container-inner {
-    height: 100%;
+.m-container {
     padding: 0;
-    background: #F7BA2A;
-    
-    position: relative;
+
+    flex-grow: 1;
+    display: flex;
+    align-items: stretch;
 }
 
 .m-sidebar {
-    height: 100%;
-    width: 300px;
-    overflow: auto;
-    position: relative;
-    z-index: 1000;
+    flex: 0 0 300px;
     box-shadow: 3px 0 3px #ccc;
-    
     background: #f3f3f3;
+
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
 }
 
 .m-content {
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    padding-left: 300px;
-
+    flex-grow: 1;
     background: #D3DCE6;
 }
 
 .m-tab {
     padding: 0;
     margin: 0;
-    height: 40px;
+    flex: 0 0 40px;
     line-height: 40px;
 }
 
@@ -96,17 +85,20 @@ li {
 }
 
 .m-sidebar-content {
-    width: 100%;
-    height: 100%;
+    flex-grow: 1;
+
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
 }
 
 .m-sidebar-toolbar {
-    width: 100%;
-    height: 40px;
+    flex: 0 0 40px;
     background: #ccc;
 }
 
 .m-sidebar-list {
-    width: 100%;
-    height: 100%;
+    flex-grow: 1;
+    background: blue;
+    overflow: auto;
 }
