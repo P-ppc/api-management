@@ -1,6 +1,29 @@
 <div class="m-sidebar-toolbar">hello world!</div>
 <div class="m-sidebar-list">
-<ul>
-    <li ng-repeat="item in project">{{item.title}}</li>
+<ul class="tree">
+    <li class="tree-node tree-node-close" ng-repeat="item in project">
+        <i class="tree-node-icon"></i>
+        <span class="tree-node-content">节点内容</span>
+        <ul class="tree tree-children">
+            <li class="tree-node tree-node-close">
+                <i class="tree-node-icon"></i>
+                <span class="tree-node-content">子节点内容</span>
+                 <ul class="tree tree-children">
+                    <li class="tree-node tree-leaf">
+                        <i class="tree-node-icon"></i>
+                        <span class="tree-node-content">孙节点内容</span>
+                    </li>
+                    <li class="tree-node tree-leaf">
+                        <i class="tree-node-icon"></i>
+                        <span class="tree-node-content">孙节点内容</span>
+                    </li>
+                    <li class="tree-node tree-leaf">
+                        <i class="tree-node-icon"></i>
+                        <span class="tree-node-content">孙节点内容</span>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </li>
 </ul>
 </div>
