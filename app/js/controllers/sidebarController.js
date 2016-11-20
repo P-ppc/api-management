@@ -25,4 +25,13 @@ AppModule.controller('sidebarController', function ($scope) {
             $scope.sidebar.class.project = "selected";
         }
     };
+
+    $scope.project = [
+        {type: "api", title: "first api!"},
+        {type: "api", title: "second api!"},
+        {type: "api", title: "3rd api!"},
+        {type: "api", title: "4th api!"}
+    ];
+
+
 });
